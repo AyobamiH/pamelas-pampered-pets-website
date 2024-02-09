@@ -34,7 +34,7 @@ const NavigationMenu = () => {
                
                     {/* <a href="#about" className='block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4'>About</a> */}
                     <Link to="/about" className='block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500' >About</Link>
-                    <a href='#services' className='block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4'>Services</a>
+                    <a href='/about#services' className='block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4'>Services</a>
                     <Link to="/contact" className='block mt-4 lg:inline-block lg:mt-0 text-black hover:text-gray-500 mr-4'>Contact</Link>
                     
           
