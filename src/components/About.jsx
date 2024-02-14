@@ -1,257 +1,177 @@
 import React from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import aboutimage1 from '../../public/images/aboutimage1.svg'
-import aboutimageone from '../../public/images/aboutimageone.png'
+import Slider from 'react-slick';
+import aboutimage1 from '/images/aboutimage1.svg'
+import aboutimageone from '/images/aboutimageone.png'
 import Image3 from '../assets/image/Image3.svg'
 import Image2 from '../assets/image/Image2.svg'
-import Image22 from '../../public/images/Image22.svg'
-import './LandingPage.css'; // Import the CSS file
+import Image22 from '/images/Image22.svg'
+
 import './AboutPage.css'
 import Image from '../assets/image/Image.svg'
 
+import headshottwo from '/images/headshottwo.png'
+import api from '../services/landingpageservices';
+
 const About = () => {
-
-    const styles = {
-        container: {
-      fontFamily: 'Arial, sans-serif',
-      color: '#40E0D0', // turquoise blue
-      width: '100%',
-      height:'auto'
-    },
-        stats: {
-        display: 'flex',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      width: '100%',
-      height: '160px',
-      backgroundColor: '#fff',
-      boxShadow: '2px 0px 10px rgba(3,3,3,0.1)',
-      margin:  '70px auto 0 auto'
-    },
-    statBox: {
-       flex: '1',
-      textAlign: 'center',
-      padding: '20px',
-      margin: '0 10px',
-      border: '0 10px',
-      width: '298px',
-      height: '112px',
-      backgroundColor: '#40bfe0',
-      borderRadius: '2px',
-    },
-     aboutImageContainer: {
-        flex: '1',
-        textAlign: 'center',
-        margin:'50px',
-        padding:'10px',
-        height:'auto'
-
-     },
-
-    
-    section: {
-      padding: '50px 20px',
-      textAlign: 'center',
-      marginBottom: '40px', // Added margin bottom for spacing
-      width: '100%',
-      height: '414px',
-      backgroundColor: '#40bfe0',
-    },
-    h1: {
-      color: '#2c3e50',
-      fontSize: '48px',
-      fontFamily: 'Roboto Mono',
-      fontWeight: 500,
-      lineHeight: '60px',
-      textAlign: 'center',
-    },
-    h2: {
-      color: '#2c3e50',
-      fontSize: '30px',
-      fontFamily: 'Roboto Mono',
-      fontWeight: 500,
-      lineHeight: '50px',
-      textAlign: 'center',
-      marginBottom:'20px',
-    },
-    p: {
-      color: '#2c3e50',
-      fontSize: '18px',
-      fontFamily: 'Roboto Mono',
-      fontWeight: 300,
-      lineHeight: '24px',
-      textAlign: 'center',
-      marginBottom: '1em', /* Add space between paragraphs */
-      lineHeight: '1.6', /* Maintain line spacing within paragraphs */
-      letterSpacing:' 0.03em',  /* Slightly increase space between letters */
-      whiteSpace: 'wrap',
-      textIndent: '20px',
-     
-    },
-    h3: {
-      color: '#2c3e50',
-      fontSize: '30px',
-      fontFamily: 'Roboto Mono',
-      fontWeight: 500,
-      lineHeight: '36px',
-      textAlign: 'center',
-      marginBottom:'20px',
-    },
-    aboutImage: {
-  
-    top: '396px',
-    left: '2px',
-    width: '1440px',
-    height: '696px',
-   
-  },
-  aboutSection: {
-    display: 'flex',
-    alignItems: 'center',
-    height:'auto',
-    marginTop:'50px',
-    
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    backgroundColor:'#fff',
-   
-
-  },
-  aboutText: {
-    flex: '1',
-    margin: '20px',
-    lineHeight:'35px',
-    
-  },
-  button: {
-      cursor: 'pointer',
-      top: '1326px',
-      left: '554px',
-      width: '332px',
-      height: '36px',
-      padding: '0px 8px',
-      border: '1px solid #030303',
-      boxSizing: 'border-box',
-      boxShadow: '2px 2px 0px rgba(0,0,0,0.8)',
-      backgroundColor: '#ffffff',
-      color: '#2c3e50',
-      fontSize: '18px',
-      fontFamily: 'Roboto Mono',
-      lineHeight: '23px',
-      textTransform: 'uppercase',
-      outline: 'none',
-      marginTop: '80px',
-    }
-    
-  
-}
-
+  const [services, setServices] = useState([]);
+  useEffect(() => {
+    // Fetch services
+    api
+      .getServices()
+      .then(fetchedServices => {
+        setServices(fetchedServices);
+        console.log(fetchedServices)
+      })
+      .catch(error => {
+        console.error('Error fetching services:', error);
+      });      
+  }, []);
     return(
-    <>
-        <div className="container">
-            <section className="about">
-        <h2>About Us</h2>
-        <h3>Caring for pets since 2016</h3>
-        <div className="image-overlay">
-          <img src={aboutimageone} alt="Pet" className="hero-image" />
-        </div>
-      </section>
-
-            <section style={styles.section}>
-                <h2 style ={styles.h2}>All your pet needs in one place</h2>
-                <p style ={styles.p}>Professional pet care services, grooming, and more in one convenient location.</p>
-                <button style={styles.button}>Get Started</button>
-                {console.log('about page')}
-                <div style={styles.stats}>
-                <div style={styles.statBox}>
-                    <h3 style={styles.h3}>12 Million</h3>
-                    <p style={styles.p}>Happy pets and satisfied</p>
-                </div>
-                <div style={styles.statBox}>
-                    <h3 style={styles.h3}>Top Rated</h3>
-                    <p style={styles.p}>Leading pet care provider</p>
-                </div>
-                <div style={styles.statBox}>
-                    <h3 style={styles.h3}>100+</h3>
-                    <p style={styles.p}>Clients served</p>
-                </div>
-                <div style={styles.statBox}>
-                    <h3 style={styles.h3}>20</h3>
-                    <p style={styles.p}>Recognitions</p>
-                </div>
-                </div>
-            </section>
-
-            {/* About Section */}
-      <div  id='about' style={{ height:'auto'}}>
+    
+      <>
+  <div className="container">
+    <section className="about">
+      <header className='about-title '>About</header>
+      {/* <p className='para'>Professional pet care provider serving seattle washing for over 20 year!</p> */}
       
-      <div style={styles.aboutSection}>
-        <div style={styles.aboutText}>
-          <h2 style={styles.h3}>About Me</h2>
-          <p style={styles.p} >Your premier choice for professional pet care in Seattle, Washington! </p>
-          
-          <p style={styles.p}>
-            I'm Pam, the owner of Pamela's Pampered Pets. With over 20 years in the pet care industry, I've built a trusted business serving pet owners across Seattle and Washington state.
-            I know your pets are family, so I offer personalized care to meet their unique needs. As a licensed, insured, CPR, and First Aid certified business, your pet's safety is my priority.
-            From daily walks to overnight stays, I treat each pet with love and care, ensuring they feel comfortable and happy while you're away.
-            For pet sitting, overnight care, or special needs services in Seattle, choose Pamela's Pampered Pets. Book a spot for your furry friend today!
-          </p>
-          
+    </section>
 
+    {/* About Section */}
+    <div className='about-us' id='about' >
+      <div className='about-section' >
+        
+        <div className='about-text'>
+          <p className='para'>Hi, I'm Pam, the owner of Pamela's Pampered Pets, your premier choice for professional pet care in Seattle, Washington! With over 20 years in the pet care industry, I've built a trusted business serving pet owners across Seattle and Washington state. I know your pets are family, so I offer personalized care to meet their unique needs.</p>
+          <p className='para' >As a licensed, insured, CPR, and First Aid certified professional, I prioritize your pet's safety above all. From daily walks to overnight stays, I treat each pet with love and care, ensuring they feel comfortable and happy while you're away. For pet sitting, overnight care, or special needs services in Seattle, choose Pamela's Pampered Pets. Book a spot for your furry friend today! </p>
         </div>
-        <div style={styles.aboutImageContainer}>
-          <img src={Image} alt="Our Vision" style={styles.aboutImage} />
-        </div>
+        <div className='about-image-container aboutImageContainer '>
+        <img src={headshottwo} alt="Pamela Marbett" className='about-image'/>
       </div>
-
+      </div>
+    </div>
+      {/* Our Process Section */}
+      <section id="process" className="features process-section">
+  <div className=" process-header">
+    <header className="">Our Process</header>
+  </div>
+  <div className=" process-list">
+    <div className="process-item">
+      <img src={Image} alt="Consultation" className="process-image" />
+      <h3  className="process-title">Complimentary Consultation</h3>
+      <p>
+        We start with a complimentary consultation where I can meet you and your fur baby. During this meeting, you can share all the important details about your darling's specific needs, preferences, and personality. This helps me to understand how best to care for them and ensure their happiness and well-being.
+      </p>
+    </div>
+    <div className="process-item">
+      <img src={Image2} alt="Care Plan" className="process-image" />
+      <h3 className="process-title">Personalized Care Plan</h3>
+      <p>
+        Based on the information gathered during our consultation, I create a personalized care plan tailored to your sweet baby's unique needs. Whether they require special attention due to their age, health, or temperament, I am equipped to provide the perfect care for them.
+      </p>
+    </div>
+    <div className="process-item">
+      <img src={Image3} alt="Loving Approach" className="process-image" />
+      <h3  className="process-title">Gentle and Loving Approach</h3>
+      <p>
+        My approach involves meeting your fur baby at their level, both physically and emotionally. By coming down to their level, I help them feel safe and comfortable. My many years of experience allow me to care for animals at all stages of life, ensuring their physical, mental, and emotional needs are met with compassion.
+      </p>
+    </div>
+    <div className="process-item">
+      <img src={Image22} alt="Special Touches" className="process-image" />
+      <h3  className="process-title">Extra Special Touches</h3>
+      <p>
+        I always strive to go above and beyond in caring for your sweet baby. From fun outings to the dog park to special ice cream treats with biscuits on top, I look for creative ways to make their time with me feel like a little vacation. I am always thinking of new and exciting activities to keep your darling engaged and happy.
+      </p>
+    </div>
+    <div className="process-item">
+      <img src={Image} alt="Expertise" className="process-image" />
+      <h3  className="process-title">Expertise and Insight</h3>
+      <p>
+        Having cared for animals from the healthiest to those nearing the end of their journey, I have developed the expertise to handle any situation that may arise. My keen insight allows me to notice when your fur baby is not feeling their best, enabling me to provide timely and appropriate care.
+      </p>
+    </div>
+    <div className="process-item">
+      <img src={Image2} alt="Communication" className="process-image" />
+      <h3  className="process-title">Ongoing Communication</h3>
+      <p>
+        Throughout our time together, I maintain open and ongoing communication with you. I believe that no detail is too small when it comes to the care of your precious darling. You can trust that I will treat your fur baby as if they were my own, with the highest standards of care and attention.
+      </p>
     </div>
   </div>
+  <p className="process-conclusion">
+    At Pamela's Pampered Pets, your sweet baby is my top priority. I am highly dedicated to ensuring they receive the love, care, and attention they deserve.
+  </p>
+</section>
 
- <section className="join-team">
-        <h3>Join Our Team</h3>
-        <div className="team-options">
-          <div className="image-overlay">
-            <img src={Image3} alt="Workplace" />
-            <p>Our pet-friendly workplace culture</p>
+      
+    <section id="services" className="features " style={{height:'auto'}}>
+      <div className="section-title" >
+        <header  className="hero-title about-title">My Services</header>
+      </div>
+      
+      <div className="features-list ">
+        {services.map((service, index) => (
+          <div className="feature-item" key={service.id}>
+            <img src={service.image} alt={service.title} className="feature-image" />
+            <h3 className="feature-title">{service.title}</h3>
+            <p className="feature-description">{service.description}</p>
           </div>
-          <div className="image-overlay">
-            <img src={Image2} alt="Office" />
-            <p>Visit our pet-friendly offices</p>
-          </div>
-          <div className="image-overlay">
-            <img src={Image3} alt="Opportunities" />
-            <p>Explore job opportunities</p>
-          </div>
-        </div>
+        ))}
+      </div>
+    </section>
+    <section className="testimonials">
+        <header className="section-title about-title">What Others Are Saying About Pamela</header>
+        <Slider {...sliderSettings} >
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="testimonial-slide">
+              <img src={testimonial.image} alt={testimonial.author} className="testimonial-image" />
+            
+              <blockquote className="testimonial">
+                <p >"{testimonial.quote}"</p>
+                <footer>— {testimonial.author}</footer>
+              </blockquote>
+              {/* <img src={testimonial.image} alt={testimonial.author} className="testimonial-image" /> */}
+            </div>
+          ))}
+        </Slider>
       </section>
-      <section className="blog">
-        <h3>Pet Care Blog</h3>
+
+  </div>
+  <section className="blog">
+       
+        <div className="section-title" >
+          <header  className="hero-title about-title">Pet Care Blog</header>
+      
+        </div>
         <div className="blog-posts">
           <div className="image-overlay">
             <img src={Image22} alt="Pet Health" />
-            <h4>How to keep your pet healthy and happy</h4>
+            <h4 className="blog-title">How to keep your pet healthy and happy</h4>
             <p>Expert advice from pet care</p>
             <button className="discover-more">DISCOVER MORE</button>
           </div>
           <div className="image-overlay">
             <img src={aboutimage1} alt="Budget" />
-            <h4>Tips for managing your pet's budget</h4>
+            <h4 className="blog-title">Tips for managing your pet's budget</h4>
             <p>Budgeting tips for pet owners</p>
             <button className="explore-more">EXPLORE MORE</button>
           </div>
           
             <div className="image-overlay">
             <img src={aboutimage1} alt="Budget" />
-            <h4>Tips for managing your pet's budget</h4>
+            <h4 className="blog-title">Tips for managing your pet's budget</h4>
             <p>Budgeting tips for pet owners</p>
             <button className="explore-more">DISCOVER MORE</button>
             </div>
             
           
         </div>
-      </section>
-        
-    </>
+        </section>
+</>
+
+     
     )
 }
 export default About
