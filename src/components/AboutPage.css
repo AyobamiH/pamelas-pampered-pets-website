@@ -319,7 +319,7 @@
 }
 
 .discover-more, .explore-more {
-  background-color: #40e0d0;
+  background-color: #3fbede;;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -364,4 +364,226 @@
   filter: blur(500px); /* Blur the background image */
   z-index: -1; /* Place it behind the content */
   opacity: 0.6; /* Slight transparency for the overlay effect */
+}
+
+
+.process-list {
+  display: flex; /* Flexbox for equal width items */
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: wrap; /* Wrap items to the next line if necessary */
+  margin: 30px;
+  padding: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.process-item {
+  
+   margin-bottom: 20px;/* Space below each item */
+  text-align: center; /* Center align the text */
+  border-radius: 10px;
+  padding: 5px;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+   flex: 1 1 45%; /* Adjust the width to fit two items per row */
+  max-width: 45%; /* Ensure maximum width is 45% to fit two items per row */
+
+}
+
+
+.process-title{
+    font-size: 1.2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+.process-image {
+  width: 100%; /* Full width for feature images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10%; /* Rounded corners */
+  margin: 20px 20px;
+padding: 10px;
+}
+
+.process-item>p{
+  font-size: 20px;
+}
+.process-conclusion {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* Media Queries */
+
+
+/* For screens with width above 1200px */
+@media only screen and (min-width: 1201px) {
+  
+  .process-header{
+    font-size: 3em; /* Large font size for the main title */
+  margin: 0 auto 20px auto; /* Space below the title */
+  color: #2c3e50; /* Dark color for text */
+  font-family: 'Roboto mono' monospace;
+  font-weight: 900;
+  line-height: 52px;
+  text-align: center;
+   font-size: 60px;
+   display: block;
+
+  }
+
+
+  .process-title {
+    font-size: 60px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.process-description {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 0.03em;
+    white-space: normal;
+    text-indent: 20px;
+    width: auto;
+
+    padding: 10px;
+
+  }
+
+
+
+
+.process-list {
+  display: flex; /* Flexbox for equal width items */
+  justify-content: space-between; /* Space items evenly */
+  flex-wrap: wrap; /* Wrap items to the next line if necessary */
+  margin: 30px;
+  padding: 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.process-item {
+  
+   margin-bottom: 20px;/* Space below each item */
+  text-align: center; /* Center align the text */
+  border-radius: 10px;
+  padding: 5px;
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+   flex: 1 1 45%; /* Adjust the width to fit two items per row */
+  max-width: 45%; /* Ensure maximum width is 45% to fit two items per row */
+
+background:#f0f8ff;
+}
+
+
+.process-title{
+    font-size: 36px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 10px;
+    background:#f0f8ff;
+}
+
+
+ 
+
+
+.process-image {
+  width: 70%; /* Full width for feature images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10%; /* Rounded corners */
+  margin: 20px 20px;
+padding: 10px;
+}
+
+
+
+.process-item>p{
+  font-size: 24px;
+  font-family: 'Roboto mono' monospace;
+  margin: 20px;
+  padding:20px;
+}
+.process-conclusion {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Roboto mono' monospace;
+  font-size: 20px;
+}
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: #40bfe0;
+    border-radius: 50%;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+ 
+  .feature-item {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    background:#f0f8ff;
+}
+
+.feature-item>p, .image-overlay p{
+  font-size: 24px;
+  font-family: 'Roboto mono' monospace;
+  margin: 20px;
+  padding:20px;
+}
+
+  .feature-image {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .feature-title {
+    font-size: 2em;
+    margin: 20px 0;
+    background:#f0f8ff;
+  }
+
+  .blog-title{
+    font-size: 1.5em;
+    margin: 20px 0;
+    background:#f0f8ff;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'Roboto mono' monospace;
+  }
 }
