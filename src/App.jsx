@@ -11,6 +11,7 @@ import ContactPage from './components/Contact'; // Import ContactPage component
 import Footer from './components/Footer';
 import ThankYou from './components/ThankYou';
 import About from './components/About'
+import MyServices from './components/MyServices'
 // import './styles/App.css'; // Import your CSS file
 
 const App = () => {
@@ -94,6 +95,11 @@ const App = () => {
             path="/about"
             element={<About/>}
           
+          />
+          <Route
+            path='/services'
+            element= {<MyServices/>} 
+
           />
 
         
