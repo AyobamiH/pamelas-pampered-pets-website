@@ -122,7 +122,7 @@ const LandingPage = () => {
             <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl text-gray-700 ">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
           </div>
           <div className=" lg:w-1/2 mt-8 lg:mt-0">
-            <img src={Image2} alt="Our Process" className="sm:w-3/6 xs:w-full  sm:mx-auto w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-36" />
+            <img src={Image2} alt="Our Process" className=" xs:w-full sm:mx-auto sm:w-full w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-56" />
           </div>
         </div>
       </section>
