@@ -122,7 +122,7 @@ const BookingForm = ({ step, setStep, formData, onChange, onSubmit, errorMessage
       </div>
 
       {step === 5 ? (
-        <div className="flex flex-col items-center justify-center pb-10 bg-white rounded-sm max-md:max-w-full">
+        <div className="relative  w-full text-center text-gray-800  mt-12 py-8 flex flex-col items-center justify-center pb-10 bg-white rounded-sm max-md:max-w-full">
           <h2 className="text-2xl font-semibold mb-4">Thank You for Your Booking!</h2>
           <p className="text-lg mb-6">Your pet sitting appointment has been confirmed.</p>
           <p className="text-md mb-4">We'll be in touch shortly with further details.</p>
@@ -193,15 +193,15 @@ const BookingForm = ({ step, setStep, formData, onChange, onSubmit, errorMessage
                           </p>
                           <p>
                             Phone:{" "}
-                            <a href="tel:+2063837255" className="hover:text-white">
+                            <a href="tel:+12063837255" className="hover:text-white">
                               (206) 383-7255
                             </a>
                           </p>
                         </div>
-                        <Link to="/booking-form">
-                        <button className="mt-4 bg-gray-800 text-gray-200 px-6 py-2 rounded-full hover:bg-[#1e778e] transition duration-300">
+                        <Link to="/booking-form" className="mt-4 bg-gray-800 text-gray-200 px-6 py-2 rounded-full hover:bg-[#1e778e] transition duration-300">
+                       
                           Book Now!
-                        </button>
+                    
                         </Link>
                       </div>
                     </footer>
