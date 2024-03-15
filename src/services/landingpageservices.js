@@ -24,4 +24,4 @@ const getServices = () => fetchData('/services');
 const getTestimonials = () => fetchData('/testimonials');
 const getStyles = () => fetchData('/styles');
 
-export default { getServices, getTestimonials, getStyles };
+export default { getServices, getTestimonials, getStyles};
