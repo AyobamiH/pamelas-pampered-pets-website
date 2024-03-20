@@ -45,11 +45,11 @@ const LandingPage = () => {
 
   return (
     <div className=" mx-auto px-4 font-roboto-mono">
-      <section className=" sm:justify-center sm:items-center sm:mt-4 md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row md:flex md:flex-row h-[100vh]">
+      <section className=" sm:justify-center sm:items-center sm:mt-4 md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row md:flex md:flex-row h-auto">
         <div className=" lg:mt-0">
-          <img src={heroimage} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-4/6 lg:w-5/6 mt-20 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
+          <img src={heroimage} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-5/6 lg:w-5/6 mt-20 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
-        <div className="text-center lg:text-left mt-36 sm:mt-4 ">
+        <div className="text-center lg:text-left mt-36 sm:mt-4 md:mt-10 ">
           <h1 className=" sm:text-5xl font-roboto-mono lg:font-extrabold lg:text-5xl text-4xl  font-bold mb-4 text-gray-900 dark:text-gray-100 ">Pamela’s Pampered Pets</h1>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">Providing engaging pet care services pet owners for 20 years.</p>
           <p className="p-4 m-4 font-roboto-mono  text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
@@ -61,11 +61,11 @@ const LandingPage = () => {
         <hr />
       </section>
 
-      <section className="xs:mt-36 sm:mt-4  sm:justify-center xs:mb-24 sm:mb-4 sm:items-center md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row-reverse md:flex md:flex-row h-[100vh]">
+      <section className="xs:mt-36 sm:mt-4  sm:justify-center xs:mb-24 sm:mb-4 sm:items-center md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row-reverse md:flex md:flex-row h-auto">
         <div className="  lg:mt-0">
-          <img src={Imagesix} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-4/6 lg:w-5/6 mt-20 sm:mt-0 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
+          <img src={Imagesix} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-5/6 lg:w-5/6 mt-20 sm:mt-0 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
-        <div className="text-center lg:text-left mt-36 sm:mt-4 ">
+        <div className="text-center lg:text-left mt-36 sm:mt-4 md:mt-10 ">
           <h1 className="sm:text-5xl font-roboto-mono  text-4xl lg:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100">Ready to Give Your Pet the Best Care?</h1>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">My goal is to provide convenient and trustworthy pet care service, fostering a community that values pets.</p>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
