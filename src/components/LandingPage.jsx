@@ -6,7 +6,7 @@ import OurWorkInAction from './OurWorkInAction';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import teachingdogstoswimwebm from '/videos/teachingdogstoswimwebm.mp4';
+import fullherovideo from '/videos/fullherovideo.mp4';
 
 
 import Testimonial from "./Testimonial";
@@ -23,7 +23,7 @@ import TeamSection from './petCareAbout/TeamSection';
       <section className="relative h-[100vh] flex items-center mt-16 justify-center bg-white dark:bg-gray-800 overflow-hidden">
         <div className="w-full h-full flex items-center justify-center aspect-video">
           <video autoPlay loop muted className="w-full h-full object-cover">
-            <source src={teachingdogstoswimwebm} type="video/mp4" />
+            <source src={ fullherovideo } type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
