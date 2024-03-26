@@ -47,7 +47,7 @@ const LandingPage = () => {
     <div className=" mx-auto px-4 font-roboto-mono">
       <section className=" sm:justify-center sm:items-center sm:mt-4 md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row md:flex md:flex-row h-auto">
         <div className=" lg:mt-0">
-          <img src={heroimage} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-5/6 lg:w-5/6 mt-20 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
+          <img src={heroimage} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full md:w-4/5 sm:w-5/6 lg:w-5/6 mt-20 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
         <div className="text-center lg:text-left mt-36 sm:mt-4 md:mt-10 ">
           <h1 className=" sm:text-5xl font-roboto-mono lg:font-extrabold lg:text-5xl text-4xl  font-bold mb-4 text-gray-900 dark:text-gray-100 ">Pamela’s Pampered Pets</h1>
@@ -63,16 +63,13 @@ const LandingPage = () => {
 
       <section className="xs:mt-36 sm:mt-4  sm:justify-center xs:mb-24 sm:mb-4 sm:items-center md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row-reverse md:flex md:flex-row h-auto">
         <div className="  lg:mt-0">
-          <img src={Imagesix} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-5/6 lg:w-5/6 mt-20 sm:mt-0 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
+          <img src={Imagesix} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full md:w-4/5 sm:w-5/6 lg:w-5/6 mt-20 sm:mt-0 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
         <div className="text-center lg:text-left mt-36 sm:mt-4 md:mt-10 ">
           <h1 className="sm:text-5xl font-roboto-mono  text-4xl lg:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100">Ready to Give Your Pet the Best Care?</h1>
-          <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">My goal is to provide convenient and trustworthy pet care service, fostering a community that values pets.</p>
+          <p className=" font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">My goal is to provide convenient and trustworthy pet care service, fostering a community that values pets.</p>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Link to="/contact" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Contact Me</Link>
-            <Link to="/booking-form" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Book Now</Link>
-          </div>
+          <div className="flex flex-col sm:flex-row gap-   
         </div>
         
       </section>

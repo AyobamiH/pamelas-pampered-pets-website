@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = 'http://localhost:3001/bookings';
+const baseUrl = 'https://pamelas-pampered-pets-website-backend.onrender.com/bookings';
 
 const create = async (newObject) => {
     try {
