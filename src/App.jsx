@@ -101,7 +101,7 @@ const App = () => {
           <Route path="/" element={<LandingPages />} /> {/*  Landing page route */}
       
          {/*  <Route path="/" element={<HomePage />} /> Landing page route */}
-          {/* <Route path="/" element={<LandingPages />} />  Landing page route */}
+        
           <Route
             path="/booking-form"
             element={<>
