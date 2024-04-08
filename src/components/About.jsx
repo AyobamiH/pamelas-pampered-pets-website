@@ -8,7 +8,7 @@ import Image3 from '../assets/image/Image3.svg'
 import Image2 from '../assets/image/Image2.svg'
 import Image22 from '/images/Image22.svg'
 
-import './AboutPage.css'
+
 import Image from '../assets/image/Image.svg'
 
 import headshottwo from '/images/headshottwo.png'
