@@ -54,8 +54,8 @@ const LandingPage = () => {
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">Providing engaging pet care services pet owners for 20 years.</p>
           <p className="p-4 m-4 font-roboto-mono  text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="#services" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Explore Our Services</a>
-            <Link to="/booking-form" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Book Now</Link>
+            <a href="#services" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded dark:py-8">Explore Our Services</a>
+            <Link to="/booking-form" className=" btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded dark:py-8">Book Now</Link>
           </div>
         </div>
         
