@@ -128,7 +128,7 @@ const LandingPage = () => {
       </section>
 
   <section className="relative py-8">
-    <div className="absolute top-0 left-0 w-4/6 h-full bg-cover bg-center blur-md opacity-50" style={{ backgroundImage: "url('/images/aboutimage.png')" }}></div>
+    <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center blur-md opacity-50" style={{ backgroundImage: "url('/images/aboutimage.png')" }}></div>
     <header className="sm:text-4xl md:text-5xl md:font-extrabold lg:font-extrabold relative z-10  text-center mb-8 text-4xl font-bold text-gray-900 ">
       What Others Are Saying About Pamela
     </header>
