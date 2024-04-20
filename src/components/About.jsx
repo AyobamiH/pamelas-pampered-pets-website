@@ -1,15 +1,15 @@
 import React from "react"
 import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+
 import Slider from 'react-slick';
 import aboutimage1 from '/images/aboutimage1.svg'
-import aboutimageone from '/images/aboutimageone.png'
+
 import Image3 from '../assets/image/Image3.svg'
 import Image2 from '../assets/image/Image2.svg'
 import Image22 from '/images/Image22.svg'
 
 
-import Image from '../assets/image/Image.svg'
+
 
 import headshottwo from '/images/headshottwo.png'
 import api from '../services/landingpageservices';
