@@ -15,6 +15,7 @@ import ContactPage from './components/TheContactPage/ContactPage'
 import Footer from './components/Footer';
 import AboutPage from './components/petCareAbout/AboutPage'
 import MyServices from './components/MyServices'
+import ServicesPage from './components/services/ServicesPage';
 
 // import './styles/App.css'; // Import your CSS file
 
@@ -126,7 +127,7 @@ const App = () => {
           />
           <Route
             path='/services'
-            element= {<MyServices/>} 
+            element= {<ServicesPage/>} 
 
           />
 
