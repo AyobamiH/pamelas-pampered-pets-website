@@ -152,10 +152,7 @@ body {
   flex-wrap: wrap; /* Wrap items to the next line if necessary */
   margin: 30px;
   padding: 30px;
-  border: 2px solid #3fbede;
   width: 100%;
-  
-  
   margin: 0 auto;
 }
 
@@ -163,12 +160,12 @@ body {
   width: 30%; /* 30% width for each feature item */
    margin-bottom: 20px;/* Space below each item */
   text-align: center; /* Center align the text */
- 
   border-radius: 10px;
-  box-shadow: 1px 1px 1px rgba(62, 188, 219, 0.8);
   padding: 5px;
 
 }
+
+
 
 .feature-image {
   width: 50%; /* Full width for feature images */
@@ -296,7 +293,18 @@ footer {
 .about-section:nth-child(even) .about-image-container {
   order: -1; /* This will reverse the order for even sections */
 }
+/* Process section style */
+.process {
+    text-align: center;
+    background-color: #f0f8ff;
+}
+.process-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 20px 0;
+  padding: 0 20px;
 
+}
 /* Stats and section styles */
 .stats, .statBox {
   display: flex;
@@ -335,7 +343,7 @@ footer {
 
 
 /* For screens with width up to 320px */
-@media only screen and (max-width: 320px) {
+/* @media only screen and (max-width: 320px) {
 
   .container {
   width: 90%;
@@ -464,7 +472,7 @@ footer {
   margin: 0 auto;
 }
 
-  /* Styles for about section */
+ 
   .about-section {
     display: flex;
     flex-direction: column-reverse;
@@ -522,11 +530,11 @@ footer {
   font-size: 18px;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
-  line-height: 1.3; /* Maintain line spacing within paragraphs */
+  line-height: 1.3; 
   text-align: center;
  
-  letter-spacing: 0.03em; /* Slightly increase space between letters */
-  white-space: normal; /* Change 'wrap' to 'normal' to maintain CSS validity */
+  letter-spacing: 0.03em;
+  white-space: normal; 
   text-indent: 20px;
 }
 
@@ -537,11 +545,291 @@ p.feature-description{
   img .testimonial-image{
     width: 100%;
   }
-}
+} */
 
 /* For screens with width from 321px to 768px */
-@media only screen and (min-width: 321px) and (max-width: 768px) {
+/* @media only screen and (min-width: 321px) and (max-width: 768px) {
   .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .hero-content,
+  .hero-image-container {
+    text-align: center;
+    height: auto;
+    width: 100%;
+  }
+
+  .hero-description,
+  .hero-subtitle,
+  .hero-title {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+
+
+  .hero a {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+  .features {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px 0;
+  }
+
+  .features-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .feature-image {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.feature-description {
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+  .feature-item {
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .feature-title {
+    font-size: 2em;
+    color: #2c3e50;
+    font-weight: 900;
+    margin: 10px 0;
+}
+  .about-us {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .aboutText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .aboutImageContainer img {
+    width: 100%;
+    height: auto;
+  }
+.about-image-container {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  padding:10px;
+  height:auto;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+  .about-title {
+    font-size: 60px;
+    margin: 20px 0;
+    padding: 0 20px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+  }
+.herotwo {
+  
+    flex-direction: column;
+  }
+
+
+  .testimonial p {
+    color: #2c3e50;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 0.03em;
+    white-space: normal;
+    text-indent: 20px;
+  }
+
+  .para {
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 0.03em;
+    white-space: normal;
+    text-indent: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
+  .testimonials {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .testimonial-slide {
+       text-align: center;
+    margin-top: 10px auto 0 auto;
+  height: auto;
+  width:50%; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 10px; 
+ 
+  border-radius: 10px; 
+  font-style: italic; 
+  text-align: center;
+  }
+
+  
+  .testimonial-image {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+  .testimonial {
+    padding: 10px;
+  }
+
+  .testimonial p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .btn-primary:hover {
+    background-color: #219fdf;
+  }
+
+
+.section-title {
+   
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+}
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+   width:100%
+  }
+  .aboutText {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .aboutImageContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text{
+   
+  flex: 1;
+  padding: 10px;
+  line-height: 35px;
+  width: auto;
+
+  }
+
+
+
+  .about-image{
+    width: 100vw;
+  height: auto;
+  }
+
+
+
+
+.testimonial p {
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  line-height: 1.3; 
+  text-align: center;
+ 
+  letter-spacing: 0.03em; 
+  white-space: normal;
+  text-indent: 20px;
+}
+
+ .testimonial p, blockquote footer{
+  color: #e9e9e9;
+}
+
+  img .testimonial-image{
+    width: 100%;
+  }
+
+} */
+
+
+/* For screens with width from 769px to 1200px */
+/* @media only screen and (min-width: 769px) and (max-width: 1200px) {
+ .container {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
@@ -578,8 +866,11 @@ p.feature-description{
 
   .hero a {
     display: block;
-    width: 100%;
-    margin: 10px 0;
+    width: 50%;
+    height: auto;
+    margin:  auto;
+    margin-bottom: 10px;
+   
   }
 
   .features {
@@ -590,6 +881,7 @@ p.feature-description{
     padding: 20px 0;
   }
 
+  
   .features-list {
     display: flex;
     justify-content: center;
@@ -600,7 +892,7 @@ p.feature-description{
   }
 
   .feature-image {
-    width: 70%;
+    width: 40%;
     height: auto;
     border-radius: 50%;
     margin: 10px auto;
@@ -608,20 +900,20 @@ p.feature-description{
   }
 
   .feature-item {
-    margin-bottom: 20px;
-    text-align: center;
+    
     border-radius: 10px;
-    padding: 5px;
+    padding: 35px;
     text-align: center;
     width: 100%;
-  }
+    margin: 0 auto;
+}
 
   .feature-title {
-    font-size: 1.2em;
+    font-size: 40px;
     color: #2c3e50;
     font-weight: 900;
     margin: 10px 0;
-  }
+}
 
   .about-us {
     width: 100%;
@@ -646,13 +938,36 @@ p.feature-description{
     width: 100%;
     height: auto;
   }
+.about-image-container {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  padding:10px;
+  height:auto;
+}
 
-  .about-title {
-    font-size: 36px;
-    margin: 20px 0;
-    padding: 0 20px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 1000;
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+
+.about-title {
+    text-align: center;
+    font-size: 70px;
+    margin: 15px auto;
+    padding: 10px;
+    font-family: 'Roboto mono', monospace;
+    font-weight: 700;
+    width: 90%;
+}
+
+
+.herotwo {
+  
+    flex-direction: column;
   }
 
   .para,
@@ -675,16 +990,42 @@ p.feature-description{
   }
 
   .testimonial-slide {
-    padding: 10px;
-    text-align: center;
+       text-align: center;
+    margin-top: 10px auto 0 auto;
+  height: auto;
+  width:50%; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 10px; 
+ 
+  border-radius: 10px; 
+  font-style: italic; 
+  text-align: center;
   }
 
-  .testimonial-image {
-    width: 80%;
+ .testimonial-image {
+    width: 20%;
     height: auto;
     border-radius: 50%;
     margin: 10px auto;
-  }
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: #40bfe0;
+    border-radius: 50%;
+}
 
   .testimonial {
     padding: 10px;
@@ -701,121 +1042,86 @@ p.feature-description{
     margin: 10px 0;
   }
 
+  .btn-primary{
+    width: 50%;
+  }
+
   .btn-primary:hover {
     background-color: #219fdf;
   }
-}
-
-
-/* For screens with width from 769px to 1200px */
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-  .container {
-    width: 85%;
-    max-width: 1100px;
-    margin: 0 auto;
-    margin-top: 80px;
-    padding: 20px;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: row;
-    height: 80vh;
-    width: 100%;
-    background-color: #fff;
-    align-items: center;
-  }
-
-  .herotwo {
-    flex-direction: row-reverse;
-  }
-
-  .hero-content, .hero-image-container {
-    height: auto;
-    width: 50%;
-  }
-
-  .hero-title {
-    font-size: 28px;
-  }
-
-  .hero-description, .hero-subtitle {
-    font-size: 18px;
-  }
-
-  .hero a {
-    width: auto;
-    margin: 10px 5px;
-    display: inline-block;
-  }
-
-  .features {
-    margin-top: 300px;
-    padding: 20px;
-  }
-
-  .features-list {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .feature-item {
-    width: 45%;
-    margin-bottom: 20px;
-  }
-
-  .feature-title {
-    font-size: 1.4em;
-  }
 
   .about-section {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    text-align: left;
+    text-align: center;
+    padding: 5px;
+   width:100%
   }
-
   .aboutText {
-    width: 50%;
-    margin-bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
   }
-
-  .about-image-container img {
-    width: 90%;
+  .aboutImageContainer img {
+    width: 100%;
     height: auto;
   }
 
-  .about-title {
-    font-size: 40px;
-    margin: 15px 0;
+  .about-text{
+   
+  flex: 1;
+  padding: 10px;
+  line-height: 35px;
+  width: auto;
+
   }
 
-  .para {
-    font-size: 15px;
+  
+
+  .about-image{
+    width: 100vw;
+  height: auto;
   }
 
-  .testimonials {
-    padding: 20px;
-  }
+    .para {
+        color: #2c3e50; 
+        font-size: 22px; 
+        font-family: 'Roboto Mono', monospace; 
+        font-weight: 300; 
+        line-height: 1.6; 
+        text-align: center;
+        margin-bottom: 1em; 
+        letter-spacing: 0.02em; 
+        white-space: normal; 
+        text-indent: 15px; 
+    }
 
-  .testimonial-slide {
-    padding: 10px;
-  }
-
-  .testimonial-image {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .testimonial p {
-    font-size: 16px;
-  }
-
-  .section-title {
-    font-size: 36px;
-  }
+.testimonial p {
+  font-size: 18px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  line-height: 1.3; 
+  text-align: center;
+ 
+  letter-spacing: 0.03em; 
+  white-space: normal;
+  text-indent: 20px;
 }
 
+ .testimonial p, blockquote footer{
+  color: #e9e9e9;
+}
+p.feature-description {
+    color: #2c3e50;
+    font-size: 20px;
+    width: 85%;
+    margin: 0 auto;
+}
+  img .testimonial-image{
+    width: 100%;
+  }
+
+} */
 
 /* For screens with width above 1200px */
 @media only screen and (min-width: 1201px) {
@@ -823,16 +1129,18 @@ p.feature-description{
     width: 80%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
   }
   
   .hero {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    height: auto;
     width: 100%;
     align-items: center;
-  }
+    margin: 30px;
+    padding: 15px;
+}
 
   .herotwo {
     flex-direction: row-reverse;
@@ -866,8 +1174,8 @@ p.feature-description{
   }
 
   .features {
-    margin-top: 500px;
-    padding: 40px;
+    margin-top: 30px;
+    padding: 10px;
   }
 
   .section-title {
@@ -877,15 +1185,17 @@ p.feature-description{
 
   .features-list {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+ 
   .feature-item {
     width: 30%;
     margin-bottom: 40px;
-    padding: 20px;
-  }
+    padding: 10px;
+    border: 1px solid #3fbede;
+}
 
   .feature-image {
     width: 100%;
@@ -904,32 +1214,47 @@ p.feature-description{
 
   .about-us {
     padding: 40px;
+    background:#f0f8ff
   }
 
   .about-section {
-    flex-direction: row;
+    flex-direction: column-reverse;
     margin-bottom: 40px;
-  }
+    
+}
 
   .about-text {
-    width: 50%;
     padding: 20px;
-  }
+    margin: 4px auto;
+}
 
   .about-image-container {
-    width: 50%;
-    padding: 20px;
-  }
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+}
+.about-title {
+    font-size: 60px;
 
-  .about-title {
-    font-size: 46px;
-    margin: 20px 0;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
   }
 
   .para {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
+    color: #2c3e50;
+    font-size: 1.6em;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 0.03em;
+    white-space: normal;
+    text-indent: 20px;
+    width: auto;
+    margin: 0 auto;
+    padding: 10px;
+}
 
   .testimonials {
     padding: 40px;
