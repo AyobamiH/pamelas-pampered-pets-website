@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'https://pamelas-pampered-pets-website-backend.onrender.com/';
+const baseUrl = 'https://pamelas-pampered-pets-website-backend.onrender.com';
 
 const getServices = async () => {
   try {
