@@ -16,6 +16,8 @@ import api from '../services/landingpageservices';
 
 const About = () => {
   const [services, setServices] = useState([]);
+
+  const [testimonials, setTestimonials] = useState([]);
   useEffect(() => {
     // Fetch services
     api
@@ -27,118 +29,94 @@ const About = () => {
       .catch(error => {
         console.error('Error fetching services:', error);
       });      
+      
+      // Fetch testimonials
+      api
+      .getTestimonials()
+      .then(fetchedTestimonials => {
+        setTestimonials(fetchedTestimonials);
+        console.log(fetchedTestimonials)
+      })
+      .catch(error => {
+        console.error('Error fetching testimonials:', error);
+      });
   }, []);
+
+  
+ 
+   
+    
+
+      
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+  };
+
     return(
     
       <>
-  <div className="container">
-    <section className="about">
-      <header className='about-title '>About</header>
-      {/* <p className='para'>Professional pet care provider serving seattle washing for over 20 year!</p> */}
-      
-    </section>
-
-    {/* About Section */}
-    <div className='about-us' id='about' >
-      <div className='about-section' >
-        
-        <div className='about-text'>
-          <p className='para'>Hi, I'm Pam, the owner of Pamela's Pampered Pets, your premier choice for professional pet care in Seattle, Washington! With over 20 years in the pet care industry, I've built a trusted business serving pet owners across Seattle and Washington state. I know your pets are family, so I offer personalized care to meet their unique needs.</p>
-          <p className='para' >As a licensed, insured, CPR, and First Aid certified professional, I prioritize your pet's safety above all. From daily walks to overnight stays, I treat each pet with love and care, ensuring they feel comfortable and happy while you're away. For pet sitting, overnight care, or special needs services in Seattle, choose Pamela's Pampered Pets. Book a spot for your furry friend today! </p>
-        </div>
-        <div className='about-image-container aboutImageContainer '>
-        <img src={headshottwo} alt="Pamela Marbett" className='about-image'/>
-      </div>
-      </div>
-    </div>
-      {/* Our Process Section */}
-      <section id="process" className="features process-section">
-  <div className=" process-header">
-    <header className="">Our Process</header>
-  </div>
-  <div className=" process-list">
-    <div className="process-item">
-      <img src={Image} alt="Consultation" className="process-image" />
-      <h3  className="process-title">Complimentary Consultation</h3>
-      <p>
-        We start with a complimentary consultation where I can meet you and your fur baby. During this meeting, you can share all the important details about your darling's specific needs, preferences, and personality. This helps me to understand how best to care for them and ensure their happiness and well-being.
-      </p>
-    </div>
-    <div className="process-item">
-      <img src={Image2} alt="Care Plan" className="process-image" />
-      <h3 className="process-title">Personalized Care Plan</h3>
-      <p>
-        Based on the information gathered during our consultation, I create a personalized care plan tailored to your sweet baby's unique needs. Whether they require special attention due to their age, health, or temperament, I am equipped to provide the perfect care for them.
-      </p>
-    </div>
-    <div className="process-item">
-      <img src={Image3} alt="Loving Approach" className="process-image" />
-      <h3  className="process-title">Gentle and Loving Approach</h3>
-      <p>
-        My approach involves meeting your fur baby at their level, both physically and emotionally. By coming down to their level, I help them feel safe and comfortable. My many years of experience allow me to care for animals at all stages of life, ensuring their physical, mental, and emotional needs are met with compassion.
-      </p>
-    </div>
-    <div className="process-item">
-      <img src={Image22} alt="Special Touches" className="process-image" />
-      <h3  className="process-title">Extra Special Touches</h3>
-      <p>
-        I always strive to go above and beyond in caring for your sweet baby. From fun outings to the dog park to special ice cream treats with biscuits on top, I look for creative ways to make their time with me feel like a little vacation. I am always thinking of new and exciting activities to keep your darling engaged and happy.
-      </p>
-    </div>
-    <div className="process-item">
-      <img src={Image} alt="Expertise" className="process-image" />
-      <h3  className="process-title">Expertise and Insight</h3>
-      <p>
-        Having cared for animals from the healthiest to those nearing the end of their journey, I have developed the expertise to handle any situation that may arise. My keen insight allows me to notice when your fur baby is not feeling their best, enabling me to provide timely and appropriate care.
-      </p>
-    </div>
-    <div className="process-item">
-      <img src={Image2} alt="Communication" className="process-image" />
-      <h3  className="process-title">Ongoing Communication</h3>
-      <p>
-        Throughout our time together, I maintain open and ongoing communication with you. I believe that no detail is too small when it comes to the care of your precious darling. You can trust that I will treat your fur baby as if they were my own, with the highest standards of care and attention.
-      </p>
-    </div>
-  </div>
-  <p className="process-conclusion">
-    At Pamela's Pampered Pets, your sweet baby is my top priority. I am highly dedicated to ensuring they receive the love, care, and attention they deserve.
-  </p>
-</section>
-
-      
-    <section id="services" className="features " style={{height:'auto'}}>
-      <div className="section-title" >
-        <header  className="hero-title about-title">My Services</header>
-      </div>
-      
-      <div className="features-list ">
-        {services.map((service, index) => (
-          <div className="feature-item" key={service.id}>
-            <img src={service.image} alt={service.title} className="feature-image" />
-            <h3 className="feature-title">{service.title}</h3>
-            <p className="feature-description">{service.description}</p>
+<section className="py-8 md:bg-[#f0f8ff]" id="about">
+        <div className="flex flex-col-reverse lg:flex-row md:flex-col-reverse  mb-8">
+          <div className=" lg:w-1/2 lg:mt-4 lg:mr-8">
+            <header className="sm:text-4xl sm:text-center md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4  text-4xl font-bold mb-4 md:text-center text-gray-900 dark:text-gray-100">Who is Pamela?</header>
+            <p className="font-roboto-mono p-4 sm:text-lg m-4 lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Hi, I'm Pam, the owner of Pamela's Pampered Pets, your premier choice for professional pet care in Seattle, Washington! With over 20 years in the pet care industry, I've built a trusted business serving pet owners across Seattle and Washington state. I know your pets are family, so I offer personalized care to meet their unique needs.</p>
+            <p className="font-roboto-mono p-4 m-4 sm:text-lg lg:text-xl text-gray-700 dark:text-gray-300">As a licensed, insured, CPR, and First Aid certified professional, I prioritize your pet's safety above all. From daily walks to overnight stays, I treat each pet with love and care, ensuring they feel comfortable and happy while you're away. For pet sitting, overnight care, or special needs services in Seattle, choose Pamela's Pampered Pets. Book a spot for your furry friend today!</p>
           </div>
-        ))}
-      </div>
-    </section>
-    <section className="testimonials">
-        <header className="section-title about-title">What Others Are Saying About Pamela</header>
-        <Slider {...sliderSettings} >
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="testimonial-slide">
-              <img src={testimonial.image} alt={testimonial.author} className="testimonial-image" />
-            
-              <blockquote className="testimonial">
-                <p >"{testimonial.quote}"</p>
-                <footer>— {testimonial.author}</footer>
-              </blockquote>
-              {/* <img src={testimonial.image} alt={testimonial.author} className="testimonial-image" /> */}
-            </div>
-          ))}
-        </Slider>
-      </section>
+          <div className=" md:mx-auto md:w-2/6 lg:w-1/2 mt-8 lg:mt-0 sm:bg-[#f0f8ff] xs:bg-[#f0f8ff]">
+            <img src={headshottwo} alt="Pamela Marbett" className="xs:mx-auto xs:w-full  sm:w-3/6 sm:mx-auto  w-4/6 h-6/6 sm:rounded-full lg:rounded-lg md:rounded:lg  lg:mx-auto" />
+          </div>
+        </div>
 
-  </div>
+        <div className=" flex flex-col mb-8 lg:flex-row md:flex-row ">
+          <div className="md:w-1/2  lg:w-1/2 mt-8 lg:mt-4 ">
+            <img src={Image3} alt="Our Approach" className=" xs:w-full sm:mx-auto sm:w-3/6 w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-56" />
+          </div>
+          <div className="md:w-1/2 lg:w-1/2 lg:mt-4 lg:ml-6">
+            <header className="sm:text-4xl sm:text-center  md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4 md:text-center md:mt-4 text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">My Approach</header>
+            <p className="p-4 m-4 font-roboto-mono sm:text-lg md:text-xl lg:text-xl mb-4 text-gray-700 dark:text-gray-300">I believe in meeting each animal with a calm, gentle, and loving demeanor. With years of experience, I connect with pets on their level, ensuring they feel safe and comfortable. My expertise spans from caring for healthy animals to those near the end of their lives, allowing me to handle any situation with excellent troubleshooting skills and keen insight into your pet's well-being.</p>
+            <p className="p-4 m-4 font-roboto-mono sm:text-lg md:text-xl lg:text-xl text-gray-700 dark:text-gray-300">I am committed to going above and beyond in my care. Whether it's taking dogs to the park or treating them to special ice cream with biscuits, I strive to create unique and enjoyable experiences for each pet. Always thinking of new and creative ways to pamper your pet, I aim to make them feel special and give them a vacation of their own when possible. Your pet's happiness and well-being are my top priorities.</p>
+          </div>
+        </div>
+<hr></hr>
+        <div className=" flex flex-col-reverse lg:flex-row md:flex-row ">
+          <div className="md:w-1/2 lg:w-1/2 lg:mt-4 lg:mr-8 ">
+            <header className="sm:text-4xl sm:text-center md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4 text-4xl font-bold mb-4 text-gray-900 dark:text-gray-100">Our Process</header>
+            <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl mb-4 text-gray-700 dark:text-gray-300">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+            <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl text-gray-700 dark:text-gray-300">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+          </div>
+          <div className=" lg:w-1/2 mt-8 lg:mt-0">
+            <img src={Image2} alt="Our Process" className="sm:w-3/6 xs:w-full  sm:mx-auto w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-36" />
+          </div>
+        </div>
+      </section>
+ 
+    <section className="relative py-8">
+    <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center blur-md opacity-50" style={{ backgroundImage: "url('/images/aboutimage.png')" }}></div>
+    <header className="sm:text-4xl md:text-5xl md:font-extrabold lg:font-extrabold relative z-10  text-center mb-8 text-4xl font-bold text-gray-900 dark:text-gray-100">
+      What Others Are Saying About Pamela
+    </header>
+    <Slider {...sliderSettings} className="relative z-10">
+      {testimonials.map(testimonial => (
+        <div key={testimonial.id} className=" mx-auto  w-4/5 sm:w-3/5 lg:w-2/5 bg-black bg-opacity-70 p-8 rounded-lg text-center italic">
+          <img src={testimonial.image} alt={testimonial.author} className="testimonial-image mx-auto mb-4 rounded-full w-24 h-24 object-cover" />
+          <blockquote className=" mb-4 text-gray-100">
+            <p className="lg:text-xl sm:text-lg font-roboto-mono text-lg">"{testimonial.quote}"</p>
+            <footer className="text-lg font-semibold text-gray-200">— {testimonial.author}</footer>
+          </blockquote>
+        </div>
+      ))}
+    </Slider>
+  </section>
+
+     
+
+  
   <section className="blog">
        
         <div className="section-title" >
