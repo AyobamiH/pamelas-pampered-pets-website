@@ -51,7 +51,7 @@ const LandingPage = () => {
         </div>
         <div className="text-center lg:text-left sm:mb-36 ">
           <h1 className=" sm:text-5xl font-roboto-mono lg:font-extrabold lg:text-5xl text-4xl  font-bold mb-4 text-gray-900 dark:text-gray-100 ">Pamela’s Pampered Pets</h1>
-          <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">Providing engaging pet care services pet owners for 20 years.</p>
+          <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-[40bfe0]">Providing engaging pet care services pet owners for 20 years.</p>
           <p className="p-4 m-4 font-roboto-mono  text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a href="#services" className="btn btn-primary bg-[#40bfe0] text-white px-4 py-2 rounded">Explore Our Services</a>
