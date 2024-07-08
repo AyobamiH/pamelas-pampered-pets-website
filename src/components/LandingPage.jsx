@@ -69,12 +69,15 @@ const LandingPage = () => {
           <h1 className="sm:text-5xl font-roboto-mono  text-4xl lg:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100">Ready to Give Your Pet the Best Care?</h1>
           <p className=" font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">My goal is to provide convenient and trustworthy pet care service, fostering a community that values pets.</p>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
-          <div className="flex flex-col sm:flex-row gap-   
+          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <Link to="/contact" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Contact Me</Link>
+            <Link to="/booking-form" className="btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Book Now</Link>
+          </div>
         </div>
         
       </section>
 <hr />
-      <section id="services" className="  py-8">
+      <section id="services" className="py-8">
         <div className=" text-center sm:mt-4 md:mt-0 xs:mt-64 sm:mb-2 mb-8">
           <header className="sm:text-5xl font-roboto-mono  sm:text-center  p-4 m-4 text-4xl md:text-5xl md:font-extrabold lg:font-extrabold lg:text-5xl font-bold lg:mt-14 text-gray-900">My Services</header>
         </div>
