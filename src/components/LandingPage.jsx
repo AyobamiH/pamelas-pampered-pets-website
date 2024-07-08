@@ -106,7 +106,7 @@ const LandingPage = () => {
 
         <div className=" flex flex-col mb-8 lg:flex-row md:flex-row ">
           <div className="md:w-1/2  lg:w-1/2 mt-8 lg:mt-4 ">
-            <img src={Image3} alt="Our Approach" className=" xs:w-full sm:mx-auto sm:w-3/6 w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-56" />
+            <img src={Image3} alt="Our Approach" className=" xs:w-full sm:mx-auto sm:w-full w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-56" />
           </div>
           <div className="md:w-1/2 lg:w-1/2 lg:mt-4 lg:ml-6">
             <header className="sm:text-4xl sm:text-center  md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4 md:text-center md:mt-4 text-4xl font-bold mb-4 text-gray-900">My Approach</header>
