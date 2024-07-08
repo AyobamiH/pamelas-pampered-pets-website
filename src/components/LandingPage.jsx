@@ -45,11 +45,11 @@ const LandingPage = () => {
 
   return (
     <div className=" mx-auto px-4 font-roboto-mono">
-      <section className="sm:mt-36  sm:justify-center sm:items-center md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row md:flex md:flex-row h-[100vh]">
-        <div className="mt-8 lg:mt-0">
-          <img src={heroimage} alt="Pamela’s Pampered Pets" className="sm:w-4/6 p-4 mx-auto w-full lg:w-5/6 mt-20 sm:rounded-full dark:rounded-full" />
+      <section className=" sm:justify-center sm:items-center sm:mt-4 md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row md:flex md:flex-row h-[100vh]">
+        <div className=" lg:mt-0">
+          <img src={heroimage} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-4/6 lg:w-5/6 mt-20 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
-        <div className="text-center lg:text-left sm:mb-36 ">
+        <div className="text-center lg:text-left mt-36 sm:mt-4 ">
           <h1 className=" sm:text-5xl font-roboto-mono lg:font-extrabold lg:text-5xl text-4xl  font-bold mb-4 text-gray-900 dark:text-gray-100 ">Pamela’s Pampered Pets</h1>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">Providing engaging pet care services pet owners for 20 years.</p>
           <p className="p-4 m-4 font-roboto-mono  text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
@@ -58,14 +58,14 @@ const LandingPage = () => {
             <Link to="/booking-form" className=" btn btn-primary bg-[#40bfe0] dark:bg-white dark:text-gray-900 text-white px-4 py-2 rounded">Book Now</Link>
           </div>
         </div>
-        
+        <hr />
       </section>
-<hr />
-      <section className="xs:mt-36  sm:justify-center xs:mb-24 sm:mb-24 sm:items-center md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row-reverse md:flex md:flex-row h-[100vh]">
-        <div className="  mt-10 lg:mt-0">
-          <img src={Imagesix} alt="Pamela’s Pampered Pets" className="sm:w-4/6 sm:mx-auto  w-full lg:w-5/6 lg:mx-auto" />
+
+      <section className="xs:mt-36 sm:mt-4  sm:justify-center xs:mb-24 sm:mb-4 sm:items-center md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex lg:flex-row-reverse md:flex md:flex-row h-[100vh]">
+        <div className="  lg:mt-0">
+          <img src={Imagesix} alt="Pamela’s Pampered Pets" className=" p-4 mx-auto w-full sm:w-4/6 lg:w-5/6 mt-20 sm:mt-0 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
-        <div className="text-center lg:text-left ">
+        <div className="text-center lg:text-left mt-36 sm:mt-4 ">
           <h1 className="sm:text-5xl font-roboto-mono  text-4xl lg:text-5xl font-extrabold mb-4 text-gray-900 dark:text-gray-100">Ready to Give Your Pet the Best Care?</h1>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-2 text-gray-700 dark:text-gray-300">My goal is to provide convenient and trustworthy pet care service, fostering a community that values pets.</p>
           <p className="p-4 m-4 font-roboto-mono text-lg lg:text-xl mb-4 text-gray-700 dark:text-gray-300">Your premier choice for professional pet care in Seattle, Washington!</p>
@@ -78,7 +78,7 @@ const LandingPage = () => {
       </section>
 <hr />
       <section id="services" className="  py-8">
-        <div className=" text-center sm:mt-20 md:mt-0 xs:mt-64 mb-8">
+        <div className=" text-center sm:mt-4 md:mt-0 xs:mt-64 sm:mb-2 mb-8">
           <header className="sm:text-5xl font-roboto-mono  sm:text-center  p-4 m-4 text-4xl md:text-5xl md:font-extrabold lg:font-extrabold lg:text-5xl font-bold lg:mt-14 text-gray-900">My Services</header>
         </div>
         <div className="text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -94,6 +94,7 @@ const LandingPage = () => {
 
       <section className="py-8 md:bg-[#f0f8ff]" id="about">
         <div className="flex flex-col-reverse lg:flex-row md:flex-col-reverse  mb-8">
+          
           <div className=" lg:w-1/2 lg:mt-4 lg:mr-8">
             <header className="sm:text-4xl sm:text-center md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4  text-4xl font-bold mb-4 md:text-center text-gray-900 ">Who is Pamela?</header>
             <p className="font-roboto-mono p-4 sm:text-lg m-4 lg:text-xl mb-4 text-gray-700 ">Hi, I'm Pam, the owner of Pamela's Pampered Pets, your premier choice for professional pet care in Seattle, Washington! With over 20 years in the pet care industry, I've built a trusted business serving pet owners across Seattle and Washington state. I know your pets are family, so I offer personalized care to meet their unique needs.</p>
@@ -103,28 +104,32 @@ const LandingPage = () => {
             <img src={headshottwo} alt="Pamela Marbett" className="xs:mx-auto xs:w-full  sm:w-3/6 sm:mx-auto  w-4/6 h-6/6 sm:rounded-full lg:rounded-lg md:rounded:lg  lg:mx-auto" />
           </div>
         </div>
-
-        <div className=" flex flex-col mb-8 lg:flex-row md:flex-row ">
-          <div className="md:w-1/2  lg:w-1/2 mt-8 lg:mt-4 ">
-            <img src={Image3} alt="Our Approach" className=" xs:w-full sm:mx-auto sm:w-full w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-56" />
+        <hr />
+        <div className="flex flex-col lg:flex-row lg:flex-wrap mt-4">
+          <div className="lg:w-1/2 md:w-full lg:mr-8">
+            <img src={Image3} alt="My Approach" className=" h-auto rounded-md lg:mr-8 lg:mb-4 mx-auto" />
           </div>
-          <div className="md:w-1/2 lg:w-1/2 lg:mt-4 lg:ml-6">
+          <div className="lg:w-1/2 md:w-full">
+        
             <header className="sm:text-4xl sm:text-center  md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4 md:text-center md:mt-4 text-4xl font-bold mb-4 text-gray-900">My Approach</header>
             <p className="p-4 m-4 font-roboto-mono sm:text-lg md:text-xl lg:text-xl mb-4 text-gray-700 ">I believe in meeting each animal with a calm, gentle, and loving demeanor. With years of experience, I connect with pets on their level, ensuring they feel safe and comfortable. My expertise spans from caring for healthy animals to those near the end of their lives, allowing me to handle any situation with excellent troubleshooting skills and keen insight into your pet's well-being.</p>
             <p className="p-4 m-4 font-roboto-mono sm:text-lg md:text-xl lg:text-xl text-gray-700 ">I am committed to going above and beyond in my care. Whether it's taking dogs to the park or treating them to special ice cream with biscuits, I strive to create unique and enjoyable experiences for each pet. Always thinking of new and creative ways to pamper your pet, I aim to make them feel special and give them a vacation of their own when possible. Your pet's happiness and well-being are my top priorities.</p>
+        
           </div>
         </div>
-<hr></hr>
-        <div className=" flex flex-col-reverse lg:flex-row md:flex-row ">
-          <div className="md:w-1/2 lg:w-1/2 lg:mt-4 lg:mr-8 ">
-            <header className="sm:text-4xl sm:text-center md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4 text-4xl font-bold mb-4 text-gray-900 ">My Process</header>
-            <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl mb-4 text-gray-700 ">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
-            <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl text-gray-700 ">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+        <hr className='mt-4'/>
+        <div className="flex flex-col lg:flex-row lg:flex-wrap mt-4">
+          <div className="lg:w-1/2 md:w-full lg:mr-8">
+            <img src={Image2} alt="Our Process" className=" h-auto rounded-md lg:mr-8 lg:mb-4 mx-auto" />
           </div>
-          <div className=" lg:w-1/2 mt-8 lg:mt-0">
-            <img src={Image2} alt="Our Process" className=" xs:w-full sm:mx-auto sm:w-full w-5/6 h-auto rounded-md lg:mx-auto md:mx-auto md:my-56" />
+          <div className="lg:w-1/2 md:w-full">
+            <header className="sm:text-4xl sm:text-center md:text-5xl md:font-extrabold lg:font-extrabold p-4 m-4 text-4xl font-bold mb-4 text-gray-900">My Process</header>
+            <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl mb-4 text-gray-700">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+            <p className="font-roboto-mono p-4 m-4 sm:text-lg md:text-xl lg:text-xl text-gray-700">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
           </div>
         </div>
+
+
       </section>
 
   <section className="relative py-8">
