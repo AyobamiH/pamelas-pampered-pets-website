@@ -47,7 +47,7 @@ const LandingPage = () => {
     <div className=" mx-auto font-roboto-mono">
       <section className="lg:h-[100vh] sm:justify-center xs:py-0 sm:items-center sm:mt-4 sm:mb-2 md:justify-center md:items-center lg:justify-center lg:items-center bg-white dark:bg-gray-800 py-8 sm:flex sm:flex-col lg:flex 
       lg:flex-row md:flex md:flex-row h-auto ">
-        <div className="xs:mt-20 sm:mt-4  lg:mt-24">
+        <div className="xs:mt-20 sm:mt-4 sm:w-3/4  lg:mt-24">
           <img src={heroimage} alt="Pamela’s Pampered Pets" className="xs:w-1/2 p-4 mx-auto w-full md:w-4/6 sm:w-4/6 lg:w-5/6 xs:mt-10 sm:mt-12 sm:text-center xs:bg-[#40bfe0]  xs:rounded-full mt-20 sm:bg-[#40bfe0] sm:rounded-full dark:rounded-full" />
         </div>
         <div className="text-center lg:text-left xs:mt-4 mt-36 sm:mt-4 md:mt-10 ">
