@@ -5,7 +5,6 @@ const baseUrl = 'https://pamelas-pampered-pets-website-backend.onrender.com/book
 const create = async (newObject) => {
     try {
         const response = await axios.post(baseUrl, newObject);
-        console.log(response.data);
         return response.data;
     } catch (error) {
         console.error(error);

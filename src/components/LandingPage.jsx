@@ -8,7 +8,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import teachingdogstoswimwebm from '/videos/teachingdogstoswimwebm.mp4';
 
-import '../styles/landingpagecss.css';
+
 import Testimonial from "./Testimonial";
 import BookASpot from './services/BookASpot';
 import ServiceGrid from './services/ServiceGrid';

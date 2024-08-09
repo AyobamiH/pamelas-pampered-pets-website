@@ -1,0 +1,364 @@
+* [33m3abab21[m[33m ([m[1;32mpamelatrials[m[33m)[m Replace MyServices component with ServicesPage in the services route
+* [33m267a630[m delete more useless media
+* [33m0d8c2b6[m media assets
+*   [33m9b96f00[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32mpamela[m[33m)[m Merge pull request #82 from AyobamiH/pamelatrials
+[32m|[m[33m\[m  
+[32m|[m [33m|[m * [33m3941def[m[33m ([m[1;34mreplaced[m[33m, [m[1;31morigin/pamelatrials[m[33m, [m[1;31morigin/pamela[m[33m, [m[1;31morigin/main[m[33m)[m Merge pull request #82 from AyobamiH/pamelatrials
+[32m|[m [33m|[m[32m/[m[33m|[m 
+[32m|[m[32m/[m[33m|[m[33m/[m  
+[32m|[m * [33m2856ba9[m Refactor LandingPage component: Streamline layout and enhance media content
+[32m|[m[32m/[m  
+*   [33m02b4593[m Merge pull request #81 from AyobamiH/pamelatrials
+[36m|[m[1;31m\[m  
+[36m|[m * [33m83060c3[m Refactor Footer component: Improve structure, styling, and content
+[36m|[m[36m/[m  
+*   [33m76a4cfb[m Merge pull request #80 from AyobamiH/pamelatrials
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m2e63fa6[m Refactor and Enhance BookingForm Component for Improved User Experience and Validation
+[1;32m|[m[1;32m/[m  
+*   [33m243d38e[m Merge pull request #79 from AyobamiH/pamelatrials
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33mdd9342f[m Refactor and enhance App.jsx with improved routing, booking form state handling, and error messaging
+[1;34m|[m[1;34m/[m  
+*   [33ma746fc9[m Merge pull request #78 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m10e906b[m deleted medias
+[1;36m|[m[1;36m/[m  
+*   [33m29be202[m Merge pull request #77 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33mb496689[m Unwanted files
+[32m|[m[32m/[m  
+*   [33md6de25f[m Merge pull request #76 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33mdb4e620[m deleted files
+[34m|[m[34m/[m  
+*   [33m3d8c599[m Merge pull request #75 from AyobamiH/pamelatrials
+[36m|[m[1;31m\[m  
+[36m|[m * [33m0fb7891[m feat: Update index.html with SEO and social media meta tags
+[36m|[m[36m/[m  
+*   [33me7e86e2[m Merge pull request #74 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33md0d68cf[m Add services header image to assets
+[1;32m|[m[1;32m/[m  
+*   [33mc4b717e[m Merge pull request #73 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33mee89fc2[m style: remove redundant color property from booking-button
+[1;34m|[m[1;34m/[m  
+*   [33m95da5a1[m Merge pull request #72 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m3f2d14d[m fix: remove extra space before closing brace in landingpageservices.js export
+[1;36m|[m[1;36m/[m  
+*   [33m7cac0db[m Merge pull request #71 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33mc523e12[m feat: Update Tailwind config with new breakpoints, heights, and animations
+[32m|[m[32m/[m  
+*   [33m510b904[m Merge pull request #70 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33ma571618[m Refactor NavigationMenu component and update styles
+[34m|[m[34m/[m  
+*   [33me5e090b[m Merge pull request #69 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33meeac576[m Refactor MyServices Component to Static Data and Enhance UI/UX
+[36m|[m[36m/[m  
+*   [33m230d2d3[m Merge pull request #68 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m74ff11d[m Refactor LandingPage component: Remove API calls and update static content
+[1;32m|[m[1;32m/[m  
+*   [33m785ab61[m Merge pull request #67 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33mc5b52ca[m Fix: Corrected JSX attributes in Footer component
+[1;34m|[m[1;34m/[m  
+*   [33m2c741ea[m Merge pull request #66 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33me836ff0[m Refactor Contact.jsx to enhance UI and add new sections
+[1;36m|[m[1;36m/[m  
+*   [33m3063d30[m Merge pull request #65 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33m5093baf[m Refactor About.jsx to streamline testimonials and improve layout
+[32m|[m[32m/[m  
+*   [33m4ed6071[m Merge pull request #64 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33m15c671f[m Adjust hero image width on small screens
+* [35m|[m [33mf048e2b[m Merge pull request #63 from AyobamiH/pamela
+[36m|[m[35m\[m[35m|[m 
+[36m|[m * [33m2ab79ac[m Enhance responsiveness and styling for LandingPage component
+[36m|[m[36m/[m  
+*   [33m21ce839[m Merge pull request #62 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m *   [33mec72117[m Merge pull request #61 from AyobamiH/main
+[1;32m|[m [1;34m|[m[1;32m\[m  
+[1;32m|[m [1;34m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m   
+* [1;34m|[m [33mc2bae00[m Merge pull request #60 from AyobamiH/pamela
+[1;36m|[m[1;34m\[m[1;34m|[m 
+[1;36m|[m * [33meda6f01[m Refactor LandingPage image classes for consistent width
+[1;36m|[m * [33m7ec09d6[m Update .gitignore, LandingPage, and service configurations
+[1;36m|[m[1;36m/[m  
+*   [33m37100ff[m Merge pull request #59 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m *   [33m6800672[m Merge pull request #58 from AyobamiH/main
+[32m|[m [34m|[m[32m\[m  
+[32m|[m [34m|[m[32m/[m  
+[32m|[m[32m/[m[34m|[m   
+* [34m|[m [33mca5382e[m Merge pull request #57 from AyobamiH/pamela
+[36m|[m[34m\[m[34m|[m 
+[36m|[m * [33m4c97a9a[m Refactor LandingPage component for better responsiveness and layout consistency
+[36m|[m[36m/[m  
+*   [33ma56d851[m Merge pull request #56 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m9e08f17[m Refactor LandingPage.jsx for Enhanced Mobile Responsiveness and UI Consistency
+[1;32m|[m[1;32m/[m  
+*   [33m143f630[m Merge pull request #55 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m *   [33mf61f3d8[m fix: Ensure responsive image width on LandingPage for small screens
+[1;34m|[m [1;36m|[m[1;34m\[m  
+[1;34m|[m [1;36m|[m[1;34m/[m  
+[1;34m|[m[1;34m/[m[1;36m|[m   
+* [1;36m|[m   [33m4219a1b[m Merge pull request #54 from AyobamiH/pamela
+[32m|[m[33m\[m [1;36m\[m  
+[32m|[m [33m|[m * [33m26dd726[m fix: Ensure responsive image width on LandingPage for small screens
+[32m|[m [33m|[m[33m/[m  
+[32m|[m *   [33mb0c9321[m Merge branch 'main' into pamela
+[32m|[m [34m|[m[32m\[m  
+[32m|[m [34m|[m[32m/[m  
+[32m|[m[32m/[m[34m|[m   
+* [34m|[m   [33m859efbe[m Merge pull request #53 from AyobamiH/pamela
+[36m|[m[1;31m\[m [34m\[m  
+[36m|[m [1;31m|[m * [33m9afbfcc[m fix: Ensure responsive image width on LandingPage for small screens
+[36m|[m [1;31m|[m[1;31m/[m  
+[36m|[m * [33m63bf03b[m Fix alignment and styling issues on LandingPage component
+[36m|[m * [33mb857bd1[m Fix alignment and styling issues on LandingPage component
+[36m|[m[36m/[m  
+*   [33ma122645[m Merge pull request #52 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m *   [33m1afe222[m Merge branch 'main' into pamela
+[1;32m|[m [1;34m|[m[1;32m\[m  
+[1;32m|[m [1;34m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m   
+* [1;34m|[m   [33m8630323[m Merge pull request #51 from AyobamiH/pamela
+[1;36m|[m[31m\[m [1;34m\[m  
+* [31m\[m [1;34m\[m   [33m9655162[m Merge pull request #50 from AyobamiH/pamela
+[32m|[m[33m\[m [31m\[m [1;34m\[m  
+* [33m\[m [31m\[m [1;34m\[m   [33mc785466[m Merge pull request #49 from AyobamiH/pamela
+[34m|[m[35m\[m [33m\[m [31m\[m [1;34m\[m  
+[34m|[m [35m|[m [33m|[m [31m|[m * [33mfb88fb0[m Enhance hero image styling for dark mode in LandingPage component
+[34m|[m [35m|[m [33m|[m [31m|[m[31m/[m  
+[34m|[m [35m|[m [33m|[m * [33mc8dd4bc[m Enhance hero image styling for dark mode in LandingPage component
+[34m|[m [35m|[m [33m|[m * [33mb7f88e2[m Enhance hero image styling for dark mode in LandingPage component
+[34m|[m [35m|[m [33m|[m[33m/[m  
+[34m|[m [35m|[m * [33mada1f0e[m Enhance hero image styling for dark mode in LandingPage component
+[34m|[m [35m|[m[35m/[m  
+[34m|[m *   [33md29e3b0[m Merge branch 'main' into pamela
+[34m|[m [36m|[m[34m\[m  
+[34m|[m [36m|[m[34m/[m  
+[34m|[m[34m/[m[36m|[m   
+* [36m|[m   [33m0267102[m Merge pull request #48 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m [36m\[m  
+[1;32m|[m [1;33m|[m * [33mc6da0ec[m Fix: Adjust Background Image Width in Testimonials Section
+[1;32m|[m [1;33m|[m[1;33m/[m  
+[1;32m|[m * [33me62fa1f[m refactor: Remove dark mode classes from paragraph tags in LandingPage component
+[1;32m|[m * [33m3204ac6[m feat: Implement landing page with service and testimonial sections
+[1;32m|[m[1;32m/[m  
+*   [33m39c1482[m Merge pull request #47 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m3d016a4[m refactor: Update API endpoints to handle primary and secondary URLs
+[1;34m|[m[1;34m/[m  
+*   [33m7d8e155[m Merge pull request #46 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33mb567461[m dark theme text colour
+[1;36m|[m[1;36m/[m  
+*   [33mde285ec[m Merge pull request #45 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33ma3379a6[m baseurl
+[32m|[m[32m/[m  
+*   [33mf193234[m Merge pull request #44 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33mdcd28e4[m baseURl correction
+[34m|[m[34m/[m  
+*   [33mde33a8f[m Merge pull request #43 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33maabc3bd[m Update base URL in landingpageservices.js to production server
+[36m|[m[36m/[m  
+*   [33mf8f4d22[m Merge pull request #42 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m4f400c0[m Add 'start' script to package.json for combined build and server start
+[1;32m|[m[1;32m/[m  
+*   [33m0e6439d[m Merge pull request #41 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m68b9cd4[m Add initial bookings data to db.json
+[1;34m|[m[1;34m/[m  
+*   [33m80fb193[m Merge pull request #40 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m8f81c63[m fix: Remove unused image  import and css import causing unresolved dependency in About component
+* [31m|[m [33m689c6b3[m Merge pull request #39 from AyobamiH/pamela
+[32m|[m[31m\[m[31m|[m 
+[32m|[m * [33ma5b4a57[m feat: removed unresolved path
+[32m|[m[32m/[m  
+*   [33m82d9a26[m Merge pull request #38 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33mefbbac4[m chore: Configure ESLint for React project with recommended plugins and settings
+[34m|[m[34m/[m  
+*   [33m872b305[m Merge pull request #37 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33mea74382[m feat: Add headshot image for About page
+[36m|[m[36m/[m  
+*   [33mc9e6634[m Merge pull request #36 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33md87682b[m style: Add CSS rules for full-height layout with flexbox
+[1;32m|[m[1;32m/[m  
+*   [33mc2f80b1[m Merge pull request #35 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m9c733c7[m style: Add Tailwind CSS configuration in styles/tailwind.css
+[1;34m|[m[1;34m/[m  
+*   [33m2d94ad9[m Merge pull request #34 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m1d26d0d[m style: Update CSS styles for #root, .logo, and .read-the-docs
+[1;36m|[m[1;36m/[m  
+*   [33mc6766b8[m Merge pull request #33 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33ma3b049a[m feat: Add MyServices component with dynamic service and testimonial sections
+[32m|[m[32m/[m  
+*   [33m62e139a[m Merge pull request #32 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33m3a60100[m build: Add Tailwind CSS integration via  in
+[34m|[m[34m/[m  
+*   [33m74b4de7[m Merge pull request #31 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33m2eb8343[m build: Configure Vite with React plugin for project setup
+[36m|[m[36m/[m  
+*   [33me22b218[m Merge pull request #30 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33md79de57[m feat: Customize Tailwind CSS configuration with custom breakpoints, fonts, and animations
+[1;32m|[m[1;32m/[m  
+*   [33m3769e57[m Merge pull request #29 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33md5d935f[m feat: Add LandingPage component with services, testimonials, and styling
+[1;34m|[m[1;34m/[m  
+*   [33m48a1f74[m Merge pull request #28 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m181c7f5[m feat: Create ContactPage component with contact details and form
+[1;36m|[m[1;36m/[m  
+*   [33m2986e84[m Merge pull request #27 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33m2207c07[m fix: Close menu on navigation link click and improve button styling
+[32m|[m[32m/[m  
+*   [33m30d64f5[m Merge pull request #26 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33m3b0ec1d[m feat: Enhance BookingForm component with multi-step functionality and improved UI
+[34m|[m[34m/[m  
+*   [33m0479400[m Merge pull request #25 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33m56fa32f[m Add detailed About page with services, testimonials, and blog sections
+[36m|[m[36m/[m  
+*   [33mfe734e8[m Merge pull request #24 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33mf255d1e[m feat: Add routing and booking functionality with form submission and new pages
+[1;32m|[m[1;32m/[m  
+*   [33m25977b7[m Merge pull request #23 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33mec5d503[m chore: Set up basic HTML structure for Vite + React project
+[1;34m|[m[1;34m/[m  
+*   [33m87752c6[m Merge pull request #22 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m31780f7[m feat: Initialize React application with root component rendering
+[1;36m|[m[1;36m/[m  
+*   [33m8dc5add[m Merge pull request #21 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33m001bc68[m Add styles for booking form component
+[32m|[m[32m/[m  
+*   [33mf721f80[m Merge pull request #20 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33m001add5[m Enhance navigation bar with responsive design and improved styles
+[34m|[m * [33m8ec76f9[m Add headshot image to public directory
+[34m|[m[34m/[m  
+*   [33mfdb1204[m Merge pull request #19 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33md2226bf[m Add new CSS styles for Pamela Pet Care website
+[36m|[m[36m/[m  
+*   [33m662aa76[m Merge pull request #18 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33mcbfb900[m Add AboutPage component with detailed sections for About, Services, and Testimonials
+[1;32m|[m[1;32m/[m  
+*   [33m2a3a5cd[m Merge pull request #17 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33mcd86547[m Add CSS styles for consistent design across components
+[1;34m|[m[1;34m/[m  
+*   [33m11f26c8[m Merge pull request #16 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33mf4b4f26[m Add LandingPage component with hero, services, and testimonials sections
+[1;36m|[m[1;36m/[m  
+*   [33m5a77b11[m Merge pull request #15 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33m62f5916[m Add NavigationMenu component with responsive design and routing
+[32m|[m * [33m31f6aa8[m media asset
+[32m|[m[32m/[m  
+*   [33mc3f14ce[m Merge pull request #14 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33me4a3a9b[m Add ThankYou component with auto-redirect feature
+[34m|[m[34m/[m  
+*   [33m7da555f[m Merge pull request #13 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33ma537521[m Add NavigationMenu component with responsive navigation
+[36m|[m[36m/[m  
+*   [33mb8e4bb7[m Merge pull request #12 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33mee271f0[m Add Footer component with navigation links and styling
+[1;32m|[m[1;32m/[m  
+*   [33m4bd3a02[m Merge pull request #11 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m1daf180[m Add basic styling and layout for Landing Page
+* [1;35m|[m [33m7dd1711[m Merge pull request #10 from AyobamiH/pamela
+[1;36m|[m[1;35m\[m[1;35m|[m 
+[1;36m|[m * [33m8209843[m Add LandingPage component with initial styling and content
+[1;36m|[m[1;36m/[m  
+*   [33mb9e13e6[m Merge pull request #9 from AyobamiH/pamela
+[32m|[m[33m\[m  
+[32m|[m * [33m887df10[m Add styles for ContactPage component
+[32m|[m[32m/[m  
+*   [33m37ef5ff[m Merge pull request #8 from AyobamiH/pamela
+[34m|[m[35m\[m  
+[34m|[m * [33ma6d2cb0[m Add ContactPage component with contact form and details
+[34m|[m[34m/[m  
+*   [33md6397af[m Merge pull request #7 from AyobamiH/pamela
+[36m|[m[1;31m\[m  
+[36m|[m * [33mbf76a39[m Refactor BookingList component to fetch and display bookings dynamically
+[36m|[m * [33m9eb6cd3[m Enhance BookingList.css for structured table display and interactive elements
+[36m|[m * [33mbf4605a[m Refactor BookingForm component for step-based navigation and form submission
+[36m|[m * [33mc6c720a[m Refactor AboutPage.css for improved styling and readability
+[36m|[m * [33m75c9c2e[m Add About component with pet care information
+[36m|[m[36m/[m  
+*   [33mc3e84e2[m Merge pull request #6 from AyobamiH/pamela
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m7207691[m Add various new images to src/assets/image/
+[1;32m|[m[1;32m/[m  
+*   [33m706f539[m Merge pull request #5 from AyobamiH/pamela
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m38d977e[m Add CRUD operations for bookings API
+[1;34m|[m * [33m05a71d7[m Add service functions for API calls
+[1;34m|[m * [33mc0970e9[m Add main application logic in App.jsx
+[1;34m|[m[1;34m/[m  
+*   [33m48f39df[m Merge pull request #4 from AyobamiH/pamela
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33ma86e80c[m Add/update images in public/images folder
+[1;36m|[m * [33mf82c8de[m Add Tailwind CSS and Autoprefixer plugins configuration
+* [31m|[m [33m2fa3df9[m Merge pull request #3 from AyobamiH/pamela
+[32m|[m[31m\[m[31m|[m 
+[32m|[m *   [33m7dc6c8c[m Merge branch 'main' into pamela
+[32m|[m [34m|[m[35m\[m  
+* [34m|[m [35m|[m [33m025a8ea[m Merge pull request #2 from AyobamiH/pamela
+[35m|[m[34m\[m[34m|[m [35m|[m 
+[35m|[m [34m|[m[35m/[m  
+[35m|[m[35m/[m[34m|[m   
+[35m|[m * [33m86217b7[m Update package-lock.json for dependencies and versions sync
+[35m|[m * [33m47a0cd3[m Refine .gitignore file to exclude logs, build artifacts, editor files, and environment-specific files
+[35m|[m * [33m01178a3[m Add initial project setup with Vite, React, and dependencies
+* [1;31m|[m [33mb39a34c[m Merge pull request #1 from AyobamiH/pamela
+[1;32m|[m[1;31m\[m[1;31m|[m 
+[1;32m|[m *   [33m54b512d[m Merge branch 'main' into pamela
+[1;32m|[m [1;34m|[m[1;32m\[m  
+[1;32m|[m [1;34m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m   
+* [1;34m|[m [33m37c0636[m Updated Project Information
+[1;35m|[m * [33md17d035[m Update README.md with new information
+[1;35m|[m[1;35m/[m  
+* [33mc936273[m Initial commit
