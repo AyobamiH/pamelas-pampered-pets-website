@@ -8,15 +8,13 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationMenu from './components/NavigationMenu';
 import LandingPages from './components/LandingPage';
 import MessagesList from './components/MessagesList';
-// import HomePage from './components/petCareHome/HomePage'
-// import HomePage from './components/pamelasPamperedPets/HomePage'
+
 
 import ContactPage from './components/TheContactPage/ContactPage'
 import Footer from './components/Footer';
 import AboutPage from './components/petCareAbout/AboutPage'
-import MyServices from './components/MyServices'
 
-// import './styles/App.css'; // Import your CSS file
+import ServicesPage from './components/services/ServicesPage';
 
 const App = () => {
   const [bookingForm, setBookingForm] = useState({
@@ -126,7 +124,7 @@ const App = () => {
           />
           <Route
             path='/services'
-            element= {<MyServices/>} 
+            element= {<ServicesPage/>} 
 
           />
 
