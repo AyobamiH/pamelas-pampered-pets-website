@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import bookingService from '../services/bookingService';
-import './BookingList.css';
+
 
 
 
