@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import bookingService from './services/bookingService'; // Adjust the import path as necessary
 import BookingForm from './components/BookingForm';
-import businesscard from '/image/businesscard.jpg';
+
 import BookingList from './components/BookingList';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavigationMenu from './components/NavigationMenu';
@@ -108,7 +108,7 @@ const App = () => {
                <BookingForm
                   step={step}
                   setStep={setStep}
-                  src={businesscard}
+                  
                   formData={bookingForm}
                   onChange={handleChange}
                   onSubmit={submitNewBooking}
